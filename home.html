@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie - Super Delicious Burger in Town!</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png" media="(min-width: 768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png" media="(min-width: 768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+
+</head>
+
+<body id="top">
+  <header class="header" data-header>
+    <div class="container">
+      <h1>
+        <a href="#" class="logo">Foodieguy.in<span class="span">.</span></a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="nav-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#food-menu" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-btn-group">
+        <button class="search-btn" aria-label="Search" data-search-btn>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-container" data-search-container>
+    <div class="search-box">
+      <input type="search" name="search" aria-label="Search here" placeholder="Type keywords here..." class="search-input">
+      <button class="search-submit" aria-label="Submit search" data-search-submit-btn>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+    </div>
+    <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
+  </div>
+
+  <main>
+    <article>
+      <section class="hero" id="home" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-subtitle">Eat Sleep And</p>
+            <h2 class="h1 hero-title">Super Delicious Burger in Town!</h2>
+            <p class="hero-text">Food is any substance consumed to provide nutritional support for an organism.</p>
+            <button class="btn">Order Now</button>
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner-bg.png" width="820" height="716" alt="Hero Banner Background" aria-hidden="true" class="w-100 hero-img-bg">
+            <img src="./assets/images/hero-banner.png" width="700" height="637" loading="lazy" alt="Delicious Burger" class="w-100 hero-img">
+          </figure>
+        </div>
+      </section>
+
+      <section class="section food-menu" id="food-menu">
+        <div class="container">
+          <p class="section-subtitle">Popular Dishes</p>
+          <h2 class="h2 section-title">Our Delicious <span class="span">Foods</span></h2>
+          <p class="section-text">Food is any substance consumed to provide nutritional support for an organism.</p>
+
+          <ul class="food-menu-list">
+            <li>
+              <div class="food-menu-card">
+                <div class="card-banner">
+                  <img src="./assets/images/cta-banner.png" width="300" height="300" loading="lazy" alt="Fried Chicken Unlimited" class="w-100">
+                  <div class="badge">-15%</div>
+                  <button class="btn food-menu-btn" data-item="Veg Burger" data-price="100.00" onclick="selectItem(event)">Order Now</button>
+                </div>
+                <div class="wrapper">
+                  <p class="category">Veg</p>
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+                <h3 class="h3 card-title">Veg Burger</h3>
+                <div class="price-wrapper">
+                  <p class="price-text">Price:</p>
+                  <data class="price">₹100.00</data>
+                  <del class="del" value="120.00">₹120.00</del>
+                </div>
+              </div>
+            </li>
+
+            <li>
+    <div class="food-menu-card">
+      <div class="card-banner">
+        <img src="./assets/images/food-menu-4.png" width="300" height="300" loading="lazy" alt="Fried Chicken Unlimited" class="w-100">
+        <div class="badge">-15%</div>
+        <button class="btn food-menu-btn" data-item="Pizza Margherita" data-price="199.00" onclick="selectItem(event)">Order Now</button>
+      </div>
+      <div class="wrapper">
+        <p class="category">veg</p>
+        <div class="rating-wrapper">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+        </div>
+      </div>
+      <h3 class="h3 card-title">Pizza Margherita</h3>
+      <div class="price-wrapper">
+        <p class="price-text">Price:</p>
+        <data class="price">₹199.00</data>
+        <del class="del" value="250.00">₹250.00</del>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div class="food-menu-card">
+      <div class="card-banner">
+        <img src="./assets/images/food-menu-3.png" width="300" height="300" loading="lazy" alt="Fried Chicken Unlimited" class="w-100">
+        <div class="badge">-15%</div>
+        <button class="btn food-menu-btn" data-item="Fried Chicken Unlimited" data-price="149.00" onclick="selectItem(event)">Order Now</button>
+      </div>
+      <div class="wrapper">
+        <p class="category">Chicken</p>
+        <div class="rating-wrapper">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+        </div>
+      </div>
+      <h3 class="h3 card-title">Fried Chicken Unlimited</h3>
+      <div class="price-wrapper">
+        <p class="price-text">Price:</p>
+        <data class="price">₹149.00</data>
+        <del class="del" value="199.00">₹199.00</del>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="food-menu-card">
+      <div class="card-banner">
+        <img src="./assets/images/food-menu-2.png" width="300" height="300" loading="lazy" alt="Fried Chicken Unlimited" class="w-100">
+        <div class="badge">-15%</div>
+         <button class="btn food-menu-btn" data-item="South Indian Dosa" data-price="80.00" onclick="selectItem(event)">Order Now</button>
+      </div>
+      <div class="wrapper">
+        <p class="category">Veg</p>
+        <div class="rating-wrapper">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+        </div>
+      </div>
+      <h3 class="h3 card-title">South Indian Dosa</h3>
+      <div class="price-wrapper">
+        <p class="price-text">Price:</p>
+        <data class="price">₹80.00</data>
+        <del class="del" value="100.00">₹100.00</del>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div class="food-menu-card">
+      <div class="card-banner">
+        <img src="./assets/images/promo-4.png" width="300" height="300" loading="lazy" alt="Fried Chicken Unlimited" class="w-100">
+        <div class="badge">-15%</div>
+         <button class="btn food-menu-btn" data-item="Indian Rice curry" data-price="150.00" onclick="selectItem(event)">Order Now</button>
+      </div>
+      <div class="wrapper">
+        <p class="category">Veg</p>
+        <div class="rating-wrapper">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+        </div>
+      </div>
+      <h3 class="h3 card-title">Indian Rice curry</h3>
+      <div class="price-wrapper">
+        <p class="price-text">Price:</p>
+        <data class="price">₹150.00</data>
+        <del class="del" value="299.00">₹299.00</del>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="food-menu-card">
+      <div class="card-banner">
+        <img src="./assets/images/promo-5.png" width="300" height="300" loading="lazy" alt="Fried Chicken Unlimited" class="w-100">
+        <div class="badge">-15%</div>
+         <button class="btn food-menu-btn" data-item="Chicken Burger" data-price="120.00" onclick="selectItem(event)">Order Now</button>
+      </div>
+      <div class="wrapper">
+        <p class="category">Chicken</p>
+        <div class="rating-wrapper">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+        </div>
+      </div>
+      <h3 class="h3 card-title">Chicken Burger</h3>
+      <div class="price-wrapper">
+        <p class="price-text">Price:</p>
+        <data class="price">₹120.00</data>
+        <del class="del" value="150.00">₹150.00</del>
+      </div>
+    </div>
+  </li>
+
+</ul>
+
+
+
+        </div>
+      </section>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="section order-form" id="order-form">
+        <div class="container">
+          <h2 class="h2 section-title">Order Form</h2>
+          <br>
+          <form action="order_handling.php" method="POST" id="food-order-form">
+            <div>
+              <label for="item-name">Item Name:</label>
+              <input type="text" id="item-name" name="item-name" readonly>
+            </div>
+            <div>
+              <label for="item-price">Price:</label>
+              <input type="text" id="item-price" name="item-price" readonly>
+            </div>
+            <div>
+              <label for="customer-name">Your Name:</label>
+              <br>
+              <input type="text" id="customer-name" name="customer-name" required>
+            </div>
+            <div>
+              <label for="customer-address">Address:</label>
+              <br>
+              <textarea id="customer-address" name="customer-address" required></textarea>
+            </div>
+            <button class="btn" type="submit">Place a Order</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section-divider white cta" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <div class="cta-content">
+            <h2 class="h2 section-title">The Foodieguy Has Excellent <span class="span">Quality Burgers!</span></h2>
+            <p class="section-text">Order now and get the best burgers delivered to your doorstep.</p>
+            <button class="btn btn-hover">Order Now</button>
+          </div>
+
+          <figure class="cta-banner">
+            <img src="./assets/images/cta-banner.png" width="700" height="637" loading="lazy" alt="Burger" class="w-100 cta-img">
+            <img src="./assets/images/sale-shape.png" width="216" height="226" loading="lazy" alt="Get up to 50% off now" class="abs-img scale-up-anim">
+          </figure>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <script>
+    function selectItem(event) {
+      const button = event.target;
+      const itemName = button.getAttribute('data-item');
+      const itemPrice = button.getAttribute('data-price');
+      document.getElementById('item-name').value = itemName;
+      document.getElementById('item-price').value = itemPrice;
+      document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const itemName = urlParams.get('item');
+      if (itemName) {
+        const itemInput = document.getElementById('item-name');
+        if (itemInput) {
+          itemInput.value = itemName;
+        }
+      }
+    });
+  </script>
+
+  <script src="./assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
