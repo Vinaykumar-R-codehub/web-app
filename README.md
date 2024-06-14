@@ -1,5 +1,8 @@
 # web-app
+
 In all php files change servername, username, password and dbname(database)to your database details
+
+
 php
 $servername = "localhost"; //servername
 $username = "root";        //database username 
