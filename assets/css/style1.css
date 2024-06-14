@@ -1,7 +1,7 @@
-/*=============== GOOGLE FONTS ===============*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
-/*=============== BASE ===============*/
+
 * {
    
     background-size: cover;
@@ -181,20 +181,18 @@ img {
   text-decoration: underline;
 }
 
-/* Input focus move up label */
+
 .login__input:focus + .login__label {
   top: -12px;
   font-size: 0.813rem;
 }
 
-/* Input focus sticky top label */
+
 .login__input:not(:placeholder-shown).login__input:not(:focus) + .login__label {
   top: -12px;
   font-size: 0.813rem;
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For medium devices */
 @media screen and (min-width: 576px) {
   .login {
     justify-content: center;
