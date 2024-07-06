@@ -28,7 +28,7 @@ CREATE TABLE orders (
  CREATE TABLE register (
     Name VARCHAR(255) NOT NULL,
     Email VARCHAR(255) NOT NULL,
-    Password VARCHAR(255) NOT NULL,
+    Password VARCHAR(255) NOT NULL
 );
 
 
